@@ -34,8 +34,8 @@ def get_word():
     plt.show()
 
 def main():
-#     htmldata = get_message()
-#     article_text_list = get_article(htmldata)
-#     write(article_text_list)
+    htmldata = get_message()
+    article_text_list = get_article(htmldata)
+    write(article_text_list)
     get_word()
 main()
