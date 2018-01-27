@@ -5,6 +5,7 @@ import re
 '''
     糗事百科爬虫
     created:2018-01-20
+    auther:zengln
 '''
 
 
