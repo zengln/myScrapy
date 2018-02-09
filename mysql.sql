@@ -11,4 +11,4 @@ CREATE TABLE novel_test (
         `collect` varchar(255) ,
         `push` varchar(255) ,
         `lastupdate` varchar(255)
-    )ENGINE=test DEFAULT CHARSET=utf8;
+    )ENGINE=InnoDB DEFAULT CHARSET=utf8;
