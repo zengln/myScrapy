@@ -1,0 +1,14 @@
+Server: Tengine
+Content-Type: text/html; charset=UTF-8
+Vary: Accept-Encoding
+Date: Thu, 08 Feb 2018 09:22:58 GMT
+X-Powered-By: PHP/5.5.9-1ubuntu4.22
+Via: cache37.l2et2[307,404-1280,M], cache25.l2et2[307,0], kunlun5.cn250[326,404-1280,M], kunlun5.cn250[326,0]
+X-Swift-Error: orig response 4XX error
+X-Swift-Error: orig response 4XX error
+X-Cache: MISS TCP_MISS dirn:-2:-2 mlen:-1
+X-Swift-Savetime: Thu, 08 Feb 2018 09:23:00 GMT
+X-Swift-Cachetime: 1
+Timing-Allow-Origin: *
+Eagleid: 7ae44a8515180817797273816e
+Content-Encoding: gzip

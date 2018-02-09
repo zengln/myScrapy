@@ -1,0 +1,14 @@
+Server: Tengine
+Content-Type: text/plain
+Date: Wed, 07 Feb 2018 09:44:03 GMT
+Last-Modified: Tue, 02 Jan 2018 14:46:48 GMT
+Etag: "5a4b9b58-17"
+Cache-Control: max-age=86400
+Accept-Ranges: bytes
+Via: cache12.l2et2[0,304-0,H], cache45.l2et2[1,0], kunlun7.cn250[0,200-0,H], kunlun4.cn250[1,0]
+Age: 85044
+X-Cache: HIT TCP_HIT dirn:9:898244036 mlen:-1
+X-Swift-Savetime: Wed, 07 Feb 2018 12:25:22 GMT
+X-Swift-Cachetime: 76721
+Timing-Allow-Origin: *
+Eagleid: 7ae44a8415180816872895095e
