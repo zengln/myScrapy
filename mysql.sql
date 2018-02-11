@@ -9,6 +9,7 @@ CREATE TABLE novel_test (
         `category` varchar(255) ,
         `novelid` varchar(255) ,
         `collect` varchar(255) ,
+        `click` varchar(255) ,
         `push` varchar(255) ,
         `lastupdate` varchar(255)
     )ENGINE=InnoDB DEFAULT CHARSET=utf8;

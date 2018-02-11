@@ -82,9 +82,9 @@ class MyScrapy(scrapy.Spider):
             name_id = re.search(r'http.*?/xiaoshuo/(.*?).html', item[0]).group(1)
             yield Request(item[0], self.getvalue, meta={'name': item[1], 'name_id': name_id, 'novelurl': item[0]})
 
-        # nextpage = int(currentpage) + 1
-        # if nextpage <= int(totalpage):
-        #     yield Request(currenturl + "_" + str(nextpage) + ".html", self.subparse)
+        nextpage = int(currentpage) + 1
+        if nextpage <= int(totalpage):
+            yield Request(currenturl + "_" + str(nextpage) + ".html", self.subparse)
 
     def getvalue(self, response):
         item = MyscrapyItem()
@@ -92,15 +92,15 @@ class MyScrapy(scrapy.Spider):
         result = BeautifulSoup(response.text, 'lxml').find('table', id='at').find_all('td')
         # print(result)
         # print(result[4].get_text())
-        item['category'] = result[0].get_text().replace('\xa0', '')
-        item['author'] =result[1].get_text().replace('\xa0', '')
-        item['serialstatus'] = result[2].get_text().replace('\xa0', '')
+        item['category'] = result[0].get_text().replace('\xa0', '').encode('utf-8')
+        item['author'] =result[1].get_text().replace('\xa0', '').encode('utf-8')
+        item['serialstatus'] = result[2].get_text().replace('\xa0', '').encode('utf-8')
         item['collect_num'] = result[3].get_text().replace('\xa0', '')
         item['serialnumber'] = result[4].get_text()[:-1].replace('\xa0', '')
         item['last_update_time'] = result[5].get_text().replace('\xa0', '')
         item['click_num'] = result[6].get_text().replace('\xa0', '')
         item['push_num'] = result[9].get_text().replace('\xa0', '')
-        item['name'] = response.meta['name']
+        item['name'] = response.meta['name'].encode('utf-8')
         item['name_id'] = response.meta['name_id']
         item['novelurl'] = response.meta['novelurl']
         return item
